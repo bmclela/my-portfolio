@@ -9,16 +9,6 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
-    />
     <script
       src="https://kit.fontawesome.com/6e3cd43b3a.js"
       crossorigin="anonymous"
@@ -77,21 +67,104 @@
       <h2 class="section-title">
         Projects
       </h2>
-      <div class="slick-slider carousel">
-        <div>
-          <img src="images/project1.jpg" alt="project image" />
-        </div>
-        <div>
-          <img src="images/project2.jpg" alt="project image" />
-        </div>
-        <div>
-          <img src="images/project3.jpg" alt="project image" />
-        </div>
-        <div>
-          <img src="images/foos-tracker.png" alt="project image" />
-        </div>
-        <div>
-          <img src="images/project3.jpg" alt="project image" />
+      <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+          <div class="col">
+            <div class="card">
+              <img
+                src="images/foos-tracker.png"
+                class="card-img-top"
+                alt="foos-tracker"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="images/foos-tracker.png"
+                class="card-img-top"
+                alt="foos-tracker"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="images/foos-tracker.png"
+                class="card-img-top"
+                alt="foos-tracker"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="images/foos-tracker.png"
+                class="card-img-top"
+                alt="foos-tracker"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="images/foos-tracker.png"
+                class="card-img-top"
+                alt="foos-tracker"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="images/foos-tracker.png"
+                class="card-img-top"
+                alt="foos-tracker"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -160,7 +233,7 @@
         </div>
         <div class="container right">
           <div class="content">
-            <h2>2019 - 2020</h2>
+            <h3>2019 - 2020</h3>
             <h5>Associate Software Developer</h5>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
@@ -173,25 +246,44 @@
             </p>
           </div>
         </div>
+        <div class="timeline-image">
+          <img src="images/sonoco.png" alt="project image" />
+        </div>
       </div>
     </section>
     <section class="contact">
       <h2 class="section-title">
         Contact
       </h2>
+      <form class="email-form" action="">
+        <div class="row">
+          <div class="form-group col">
+            <label for="input-email">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="input-email"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="form-group col">
+            <label for="input-name">Name</label>
+            <input type="text" class="form-control" id="input-name" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="input-text">Message</label>
+          <textarea class="form-control" id="input-text" rows="3"></textarea>
+        </div>
+      </form>
       <i class="media-icon fab fa-facebook-square fa-2x"></i>
       <i class="media-icon fab fa-twitter-square fa-2x"></i>
       <i class="media-icon fab fa-linkedin fa-2x"></i>
-      <p>Ben McLeland &copy2020</p>
+      <p class="copyright">Ben McLeland &copy2020</p>
     </section>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
     <script
@@ -200,14 +292,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-    ></script>
-    <script src="app.js"></script>
+
+    <script>
+      particlesJS.load("particles-js", "particles.json");
+    </script>
   </body>
 </html>
