@@ -37,29 +37,39 @@
             alt="headshot"
           />
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
-            nobis voluptatum assumenda dolores labore, asperiores laborum
-            similique omnis perferendis in.
+            I am a passionate and motivated software developer with a Bachelors
+            Degree in Computer Science from Clemson University. I have
+            experience working on both large scale distributed computing systems
+            as well as smaller Node.js powered applications. I am always
+            learning and working hard to improve my skills.
           </p>
         </div>
         <div class="technology col"></div>
       </div>
-      <div class="skills row">
+      <div class="row row-cols-4 skills">
         <div class="col">
-          <i class="fas fa-laptop-code fa-3x"></i>
+          <div class="skill">
+            <i class="fas fa-laptop-code fa-3x"></i>
+          </div>
           <p>Expert Design</p>
         </div>
         <div class="col">
-          <i class="far fa-clock fa-3x"></i>
-          <p>Fast Delivery</p>
+          <div class="skill">
+            <i class="far fa-clock fa-3x"></i>
+            <p>Fast Delivery</p>
+          </div>
         </div>
         <div class="col">
-          <i class="fa fa-edit fa-3x"></i>
-          <p>Attention to Detail</p>
+          <div class="skill">
+            <i class="fa fa-edit fa-3x"></i>
+            <p>Detailed</p>
+          </div>
         </div>
         <div class="col">
-          <i class="far fa-lightbulb fa-3x"></i>
-          <p>Innovative</p>
+          <div class="skill">
+            <i class="far fa-lightbulb fa-3x"></i>
+            <p>Innovative</p>
+          </div>
         </div>
       </div>
     </section>
@@ -70,21 +80,29 @@
       <div class="container-fluid">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
           <div class="col">
-            <div class="card">
-              <img
-                src="images/foos-tracker.png"
-                class="card-img-top"
-                alt="foos-tracker"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+            <div
+              class="card-link"
+              data-toggle="modal"
+              data-target="#exampleModal"
+              href=""
+            >
+              <div class="card">
+                <img
+                  src="images/foos-tracker.png"
+                  class="card-img-top"
+                  alt="foos-tracker"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+
           <div class="col">
             <div class="card">
               <img
@@ -117,52 +135,61 @@
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="images/foos-tracker.png"
-                class="card-img-top"
-                alt="foos-tracker"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                FoosTracker
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-          </div>
-          <div class="col">
-            <div class="card">
+            <div class="modal-body">
               <img
                 src="images/foos-tracker.png"
                 class="card-img-top"
                 alt="foos-tracker"
               />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                doloremque iste. Temporibus sequi maxime inventore itaque
+                aliquid ad voluptatibus a perferendis sed illum ipsa obcaecati
+                ab soluta distinctio laborum magnam eum, doloribus eius
+                praesentium animi vel sunt eveniet error aut. Fugiat ipsum
+                voluptatum et, veniam vitae quis saepe dignissimos excepturi!
+              </p>
             </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="images/foos-tracker.png"
-                class="card-img-top"
-                alt="foos-tracker"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">
+                GitHub
+              </button>
+              <button type="button" class="btn btn-primary">
+                Live Demo
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
             </div>
           </div>
         </div>
@@ -294,7 +321,7 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
     <script>
-      particlesJS.load("particles-js", "particles.json");
+      particlesJS.load('particles-js', 'particles.json');
     </script>
   </body>
 </html>

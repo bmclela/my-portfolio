@@ -42,7 +42,7 @@ section {
   text-align: center;
   margin: 20px 0 50px;
   text-decoration: underline;
-  color: #00adb5;
+  color: #222831;
 }
 
 .headshot {
@@ -53,11 +53,25 @@ section {
   margin: 30px;
 }
 
+.skill {
+  background-color: white;
+  padding: 20px 0 10px;
+  border-radius: 50%;
+  color: #222831;
+  max-width: 8rem;
+  max-height: 10rem;
+  margin: auto;
+}
+
 .skills .col img {
   width: 50px;
 }
 
 /* Projects */
+
+.projects {
+  background-color: #afafaf;
+}
 
 .card-img-top {
   padding: 20px 10px 0;
@@ -65,6 +79,27 @@ section {
 
 .card {
   margin: 20px auto;
+  transition: all 0.2s ease;
+}
+
+.card-link {
+  color: black;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card img {
+  transition: all 0.2s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card-body {
   background-color: #eeeeee;
 }
 
@@ -85,7 +120,7 @@ section {
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 1px;
   background-color: #afafaf;
@@ -197,6 +232,10 @@ section {
   background-color: #222831;
   color: white;
   text-align: center;
+}
+
+.contact .section-title {
+  color: white;
 }
 
 .media-icon {
