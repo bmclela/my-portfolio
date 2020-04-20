@@ -2,9 +2,36 @@ section {
   padding: 50px;
 }
 
-/* Intro */
+/* Navbar */
 
-.intro {
+#navbar {
+  background-color: #222831;
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  z-index: 100;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Home */
+
+.home {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -14,8 +41,16 @@ section {
   padding: 0;
 }
 
+#home {
+  padding: 0;
+}
+
 .name {
-  color: #00adb5;
+  color: #fedb62;
+}
+
+.profession {
+  color: #17b088;
 }
 
 .heading {
@@ -23,11 +58,33 @@ section {
   position: absolute;
 }
 
+.about-link {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  margin-left: -20px;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 12px;
+  font-size: 1.2rem;
+}
+
+.about-link:hover {
+  color: white;
+  text-decoration: unset;
+  background-color: #5a24b0;
+}
+
 /* About */
 
-.about {
-  background-color: #eeeeee;
+#about {
+  background-color: #22283128;
   text-align: center;
+}
+
+.about-me {
+  font-style: italic;
+  padding: 20px;
 }
 
 .image-panel {
@@ -49,7 +106,7 @@ section {
   width: 200px;
 }
 
-/* .skills {
+/* #skills {
   margin: 30px;
 } */
 
@@ -61,14 +118,30 @@ section {
   margin: 15px 0;
 }
 
+.skill-1 h5 span {
+  color: #fedb62;
+}
+
+.skill-2 h5 span {
+  color: #ffb4c4;
+}
+
+.skill-3 h5 span {
+  color: #17b088;
+}
+
+.skill-4 h5 span {
+  color: #5a24b0;
+}
+
 .skill h5 {
   font-size: 25px;
   margin-bottom: 30px;
 }
-
+/* 
 .skill h5 span {
   color: #00adb5;
-}
+} */
 
 .skill p {
   margin-bottom: 0;
@@ -76,9 +149,9 @@ section {
 
 /* Projects */
 
-/* .projects {
-  background-color: #afafaf;
-} */
+#projects {
+  background-color: white;
+}
 
 .card-img-top {
   padding: 20px 10px 0;
@@ -88,7 +161,38 @@ section {
   margin: 20px auto;
   transition: all 0.2s ease;
   border-radius: 15px;
+  /* background-color: #22283128; */
 }
+
+.card-title {
+  color: #17b088;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card .background-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
+}
+
+/* .card-1 .card-title {
+  color: #17b088;
+}
+
+.card-2 .card-title {
+  color: #fedb62;
+}
+
+.card-3 .card-title {
+  color: #ffb4c4;
+} */
 
 .card-link {
   color: black;
@@ -99,21 +203,37 @@ section {
   cursor: pointer;
 }
 
-.card img {
+.card .card-img-top {
   transition: all 0.2s ease;
+  z-index: 1;
 }
 
-.card:hover img {
+.card:hover .card-img-top {
   transform: scale(1.1);
 }
 
-/* .card-body {
-  background-color: #eeeeee;
+/* .card-1 .card-body {
+  background-color: #fedc624f;
+  z-index: 0;
+}
+
+.card-2 .card-body {
+  background-color: #5a24b041;
+  z-index: 0;
+}
+
+.card-3 .card-body {
+  background-color: #ffb4c449;
+  z-index: 0;
 } */
+
+.card-body {
+  background-color: #eeeeee;
+}
 
 /* Experience */
 
-.experience {
+#experience {
   background-color: #eeeeee;
   text-align: left;
   padding-bottom: 150px;
@@ -128,7 +248,7 @@ section {
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 1px;
   background-color: #afafaf;
@@ -236,13 +356,13 @@ section {
 
 /* Contact */
 
-.contact {
+#contact {
   background-color: #222831;
   color: white;
   text-align: center;
 }
 
-.contact .section-title {
+#contact .section-title {
   color: white;
 }
 

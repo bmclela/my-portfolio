@@ -17,25 +17,36 @@
     <title>Ben McLeland</title>
   </head>
   <body>
-    <section class="intro" id="particles-js">
-      <div class="heading">
-        <h1>Hi, I'm <span class="name">Ben McLeland</span></h1>
-        <h1>
-          I'm a Software Engineer
-        </h1>
+    <section id="home">
+      <a class="about-link" href="#about">About</a>
+      <div class="home" id="particles-js">
+        <div class="heading">
+          <h1>Hi, I'm <span class="name">Ben McLeland</span></h1>
+          <h1>I'm a <span class="profession">Software Engineer</span></h1>
+        </div>
       </div>
     </section>
-    <section class="about">
+    <div id="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <section id="about">
       <h2 class="section-title">
         About
       </h2>
       <div class="row">
-        <div class="image-panel col-4">
+        <div class="image-panel col-md-6 col-12">
           <img
             class="headshot"
             src="images/Headshot_circle.png"
             alt="headshot"
           />
+        </div>
+        <div class="about-me col-md-6 col-12">
           <p>
             I am a passionate and motivated software developer with a Bachelors
             Degree in Computer Science from Clemson University. I have
@@ -44,11 +55,10 @@
             learning and working hard to improve my skills.
           </p>
         </div>
-        <div class="technology col-8"></div>
       </div>
       <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 skills">
         <div class="col">
-          <div class="skill">
+          <div class="skill skill-1">
             <h5>
               <span><i class="fas fa-laptop-code"></i></span> Expert Design
             </h5>
@@ -59,7 +69,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="skill">
+          <div class="skill skill-2">
             <h5>
               <span><i class="far fa-clock"></i></span> Fast Delivery
             </h5>
@@ -70,7 +80,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="skill">
+          <div class="skill skill-3">
             <h5>
               <span><i class="far fa-edit"></i></span> Pixel Perfect
             </h5>
@@ -81,7 +91,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="skill">
+          <div class="skill skill-4">
             <h5>
               <span><i class="far fa-lightbulb"></i></span> Innovative
             </h5>
@@ -93,7 +103,7 @@
         </div>
       </div>
     </section>
-    <section class="projects">
+    <section id="projects">
       <h2 class="section-title">
         Projects
       </h2>
@@ -106,17 +116,23 @@
               data-target="#exampleModal"
               href=""
             >
-              <div class="card">
+              <div class="card card-1">
+                <img
+                  src="/images/code.jpg"
+                  class="background-image"
+                  alt="code"
+                />
                 <img
                   src="images/foos-tracker.png"
                   class="card-img-top"
                   alt="foos-tracker"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h4 class="card-title">FoosTracker</h4>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    up the bulk of the card's content. up the bulk of the card's
+                    content.
                   </p>
                 </div>
               </div>
@@ -124,33 +140,45 @@
           </div>
 
           <div class="col">
-            <div class="card">
+            <div class="card card-2">
+              <img
+                src="/images/gears.jpg"
+                class="background-image"
+                alt="code"
+              />
               <img
                 src="images/foos-tracker.png"
                 class="card-img-top"
                 alt="foos-tracker"
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h4 class="card-title">Card title</h4>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  the bulk of the card's content. the bulk of the card's
+                  content.
                 </p>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card">
+            <div class="card card-3">
+              <img
+                src="/images/circuit-board.jpg"
+                class="background-image"
+                alt="code"
+              />
               <img
                 src="images/foos-tracker.png"
                 class="card-img-top"
                 alt="foos-tracker"
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h4 class="card-title">Card title</h4>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  the bulk of the card's content. the bulk of the card's
+                  content.
                 </p>
               </div>
             </div>
@@ -215,7 +243,7 @@
         </div>
       </div>
     </section>
-    <section class="experience">
+    <section id="experience">
       <h2 class="section-title">
         Experience
       </h2>
@@ -298,7 +326,7 @@
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section id="contact">
       <h2 class="section-title">
         Contact
       </h2>
@@ -329,8 +357,8 @@
       <p class="copyright">Ben McLeland &copy2020</p>
     </section>
     <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
       crossorigin="anonymous"
     ></script>
     <script
@@ -340,8 +368,6 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
-    <script>
-      particlesJS.load("particles-js", "particles.json");
-    </script>
+    <script src="/script.js"></script>
   </body>
 </html>
