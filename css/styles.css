@@ -49,29 +49,36 @@ section {
   width: 200px;
 }
 
-.skills {
+/* .skills {
   margin: 30px;
-}
+} */
 
 .skill {
   background-color: white;
-  padding: 20px 0 10px;
-  border-radius: 50%;
-  color: #222831;
-  max-width: 8rem;
-  max-height: 10rem;
-  margin: auto;
+  border: 1px solid #cacaca;
+  border-radius: 15px;
+  padding: 40px 20px;
+  margin: 15px 0;
 }
 
-.skills .col img {
-  width: 50px;
+.skill h5 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.skill h5 span {
+  color: #00adb5;
+}
+
+.skill p {
+  margin-bottom: 0;
 }
 
 /* Projects */
 
-.projects {
+/* .projects {
   background-color: #afafaf;
-}
+} */
 
 .card-img-top {
   padding: 20px 10px 0;
@@ -80,6 +87,7 @@ section {
 .card {
   margin: 20px auto;
   transition: all 0.2s ease;
+  border-radius: 15px;
 }
 
 .card-link {
@@ -99,9 +107,9 @@ section {
   transform: scale(1.1);
 }
 
-.card-body {
+/* .card-body {
   background-color: #eeeeee;
-}
+} */
 
 /* Experience */
 
@@ -120,7 +128,7 @@ section {
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 1px;
   background-color: #afafaf;
