@@ -18,107 +18,159 @@
   </head>
   <body>
     <section id="home">
-      <a class="about-link" href="#about">About</a>
       <div class="home" id="particles-js">
         <div class="heading">
           <h1>Hi, I'm <span class="name">Ben McLeland</span></h1>
           <h1>I'm a <span class="profession">Software Engineer</span></h1>
         </div>
       </div>
+      <a class="about-link" href="#about">About</a>
     </section>
-    <div id="navbar">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </div>
+    <ul id="navbar" class="nav navbar-justified">
+      <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#experience">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
 
     <section id="about">
-      <h2 class="section-title">
-        About
-      </h2>
-      <div class="row">
-        <div class="image-panel col-md-6 col-12">
-          <img
-            class="headshot"
-            src="images/Headshot_circle.png"
-            alt="headshot"
-          />
-        </div>
-        <div class="about-me col-md-6 col-12">
-          <p>
-            I am a passionate and motivated software developer with a Bachelors
-            Degree in Computer Science from Clemson University. I have
-            experience working on both large scale distributed computing systems
-            as well as smaller Node.js powered applications. I am always
-            learning and working hard to improve my skills.
-          </p>
-        </div>
-      </div>
-      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 skills">
-        <div class="col">
-          <div class="skill skill-1">
-            <h5>
-              <span><i class="fas fa-laptop-code"></i></span> Expert Design
-            </h5>
+      <div class="content-container">
+        <h2 class="section-title">
+          About
+        </h2>
+        <div class="row profile">
+          <div class="image-panel col-md-6 col-12">
+            <img
+              class="headshot"
+              src="images/Headshot_circle.png"
+              alt="headshot"
+            />
+          </div>
+          <div class="about-me col-md-6 col-12">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-              recusandae enim consequatur maxime, sit atque!
+              I am a passionate software developer with a Bachelors Degree in
+              Computer Science from Clemson University. I have experience
+              working on both large scale distributed computing systems and
+              small independent projects. I am always learning and working hard
+              to improve my skills.
             </p>
           </div>
         </div>
-        <div class="col">
-          <div class="skill skill-2">
-            <h5>
-              <span><i class="far fa-clock"></i></span> Fast Delivery
-            </h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-              recusandae enim consequatur maxime, sit atque!
-            </p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 skills">
+          <div class="col">
+            <div class="skill skill-1">
+              <h5>
+                <span><i class="fas fa-laptop-code"></i></span> Font-End
+              </h5>
+              <p>
+                I use React with Redux to manage large single-page web
+                applications. For small sites I go with HTML - CSS - JS, and
+                maybe throw in Sass.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="skill skill-3">
-            <h5>
-              <span><i class="far fa-edit"></i></span> Pixel Perfect
-            </h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-              recusandae enim consequatur maxime, sit atque!
-            </p>
+          <div class="col">
+            <div class="skill skill-2">
+              <h5>
+                <span><i class="fa fa-cogs"></i></span> Back-End
+              </h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                recusandae enim consequatur maxime, sit atque!
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="skill skill-4">
-            <h5>
-              <span><i class="far fa-lightbulb"></i></span> Innovative
-            </h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-              recusandae enim consequatur maxime, sit atque!
-            </p>
+          <div class="col">
+            <div class="skill skill-3">
+              <h5>
+                <span><i class="fa fa-area-chart"></i></span> Algorithms
+              </h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                recusandae enim consequatur maxime, sit atque!
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="skill skill-4">
+              <h5>
+                <span><i class="far fa-edit"></i></span> Design
+              </h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                recusandae enim consequatur maxime, sit atque!
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section id="projects">
-      <h2 class="section-title">
-        Projects
-      </h2>
-      <div class="container-fluid">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-          <div class="col">
-            <div
-              class="card-link"
-              data-toggle="modal"
-              data-target="#exampleModal"
-              href=""
-            >
-              <div class="card card-1">
+      <div class="content-container">
+        <h2 class="section-title">
+          Projects
+        </h2>
+        <div class="container-fluid">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col">
+              <div
+                class="card-link"
+                data-toggle="modal"
+                data-target="#exampleModal"
+                href=""
+              >
+                <div class="card card-1">
+                  <!-- <img
+                    src="images/code.jpg"
+                    class="background-image"
+                    alt="code"
+                  /> -->
+                  <img
+                    src="images/foos-tracker.png"
+                    class="card-img-top"
+                    alt="foos-tracker"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">FoosTracker</h4>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content. up the bulk of the
+                      card's content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-2">
+                <!-- <img src="images/gears.jpg" class="background-image" alt="code" /> -->
+                <img
+                  src="images/songify.png"
+                  class="card-img-top"
+                  alt="foos-tracker"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Songify</h4>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content. the bulk of the card's
+                    content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-3">
                 <!-- <img
-                  src="images/code.jpg"
+                  src="images/circuit-board.jpg"
                   class="background-image"
                   alt="code"
                 /> -->
@@ -128,54 +180,13 @@
                   alt="foos-tracker"
                 />
                 <div class="card-body">
-                  <h4 class="card-title">FoosTracker</h4>
+                  <h4 class="card-title">Card title</h4>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
-                    up the bulk of the card's content. up the bulk of the card's
+                    up the bulk of the card's content. the bulk of the card's
                     content.
                   </p>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card card-2">
-              <!-- <img src="images/gears.jpg" class="background-image" alt="code" /> -->
-              <img
-                src="images/foos-tracker.png"
-                class="card-img-top"
-                alt="foos-tracker"
-              />
-              <div class="card-body">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content. the bulk of the card's
-                  content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card card-3">
-              <!-- <img
-                src="images/circuit-board.jpg"
-                class="background-image"
-                alt="code"
-              /> -->
-              <img
-                src="images/foos-tracker.png"
-                class="card-img-top"
-                alt="foos-tracker"
-              />
-              <div class="card-body">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content. the bulk of the card's
-                  content.
-                </p>
               </div>
             </div>
           </div>
@@ -240,85 +251,87 @@
       </div>
     </section>
     <section id="experience">
-      <h2 class="section-title">
-        Experience
-      </h2>
-      <div class="timeline">
-        <!-- Coker -->
-        <div class="timeline-image">
-          <img src="images/coker.png" alt="project image" />
-        </div>
-        <div class="container left">
-          <div class="content">
-            <h3>2015</h3>
-            <h5>Information Technology Technician</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit id
-              libero sint aut, culpa mollitia quod, iure labore minima sunt
-              corporis quibusdam quo unde illum nulla ut nisi rem modi porro
-              suscipit velit sequi aspernatur quos totam. Voluptatibus optio,
-              voluptate mollitia iusto ab, repudiandae, eius non odit tempora
-              nulla suscipit!
-            </p>
+      <div class="content-container">
+        <h2 class="section-title">
+          Experience
+        </h2>
+        <div class="timeline">
+          <!-- Coker -->
+          <div class="timeline-image img-1">
+            <img src="images/coker.png" alt="project image" />
           </div>
-        </div>
-        <!-- Sonoco 1 -->
-        <div class="timeline-image">
-          <img src="images/sonoco.png" alt="project image" />
-        </div>
-        <div class="container right">
-          <div class="content">
-            <h3>2017</h3>
-            <h5>Help Desk Technician</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit id
-              libero sint aut, culpa mollitia quod, iure labore minima sunt
-              corporis quibusdam quo unde illum nulla ut nisi rem modi porro
-              suscipit velit sequi aspernatur quos totam. Voluptatibus optio,
-              voluptate mollitia iusto ab, repudiandae, eius non odit tempora
-              nulla suscipit!
-            </p>
+          <div class="container left">
+            <div class="content">
+              <h3>2015</h3>
+              <h5>Information Technology Technician</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit id
+                libero sint aut, culpa mollitia quod, iure labore minima sunt
+                corporis quibusdam quo unde illum nulla ut nisi rem modi porro
+                suscipit velit sequi aspernatur quos totam. Voluptatibus optio,
+                voluptate mollitia iusto ab, repudiandae, eius non odit tempora
+                nulla suscipit!
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="timeline-image">
-          <img src="images/sonoco.png" alt="project image" />
-        </div>
-        <div class="container left">
-          <!-- Sonoco 2 -->
-          <div class="content">
-            <h3>2018</h3>
-            <h5>SharePoint Administrator</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit id
-              libero sint aut, culpa mollitia quod, iure labore minima sunt
-              corporis quibusdam quo unde illum nulla ut nisi rem modi porro
-              suscipit velit sequi aspernatur quos totam. Voluptatibus optio,
-              voluptate mollitia iusto ab, repudiandae, eius non odit tempora
-              nulla suscipit!
-            </p>
+          <!-- Sonoco 1 -->
+          <div class="timeline-image img-2">
+            <img src="images/sonoco.png" alt="project image" />
           </div>
-        </div>
-        <!-- Fusion360 -->
-        <div class="timeline-image">
-          <img src="images/fusion.png" alt="project image" />
-        </div>
-        <div class="container right">
-          <div class="content">
-            <h3>2019 - 2020</h3>
-            <h5>Associate Software Developer</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-              cupiditate suscipit eligendi numquam animi eos! Voluptate facere
-              laborum veniam delectus porro quis aut hic neque, expedita,
-              inventore, pariatur obcaecati. Quibusdam assumenda ex, saepe iure,
-              explicabo velit aspernatur at dignissimos vitae sit, minima animi
-              veritatis ipsam odit. Quod iste ratione et modi sed pariatur qui
-              fugiat totam cum doloremque. Corporis, eveniet.
-            </p>
+          <div class="container right">
+            <div class="content">
+              <h3>2017</h3>
+              <h5>Help Desk Technician</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit id
+                libero sint aut, culpa mollitia quod, iure labore minima sunt
+                corporis quibusdam quo unde illum nulla ut nisi rem modi porro
+                suscipit velit sequi aspernatur quos totam. Voluptatibus optio,
+                voluptate mollitia iusto ab, repudiandae, eius non odit tempora
+                nulla suscipit!
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="timeline-image">
-          <img src="images/question-mark.jpg" alt="project image" />
+          <div class="timeline-image img-3">
+            <img src="images/sonoco.png" alt="project image" />
+          </div>
+          <div class="container left">
+            <!-- Sonoco 2 -->
+            <div class="content">
+              <h3>2018</h3>
+              <h5>SharePoint Administrator</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit id
+                libero sint aut, culpa mollitia quod, iure labore minima sunt
+                corporis quibusdam quo unde illum nulla ut nisi rem modi porro
+                suscipit velit sequi aspernatur quos totam. Voluptatibus optio,
+                voluptate mollitia iusto ab, repudiandae, eius non odit tempora
+                nulla suscipit!
+              </p>
+            </div>
+          </div>
+          <!-- Fusion360 -->
+          <div class="timeline-image img-4">
+            <img src="images/fusion.png" alt="project image" />
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h3>2019 - 2020</h3>
+              <h5>Associate Software Developer</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                cupiditate suscipit eligendi numquam animi eos! Voluptate facere
+                laborum veniam delectus porro quis aut hic neque, expedita,
+                inventore, pariatur obcaecati. Quibusdam assumenda ex, saepe
+                iure, explicabo velit aspernatur at dignissimos vitae sit,
+                minima animi veritatis ipsam odit. Quod iste ratione et modi sed
+                pariatur qui fugiat totam cum doloremque. Corporis, eveniet.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-image img-5">
+            <img src="images/question-mark.jpg" alt="project image" />
+          </div>
         </div>
       </div>
     </section>
@@ -326,36 +339,26 @@
       <h2 class="section-title">
         Contact
       </h2>
-      <form class="email-form" action="">
-        <div class="row">
-          <div class="form-group col">
-            <label for="input-email">Email address</label>
-            <input
-              type="email"
-              class="form-control"
-              id="input-email"
-              aria-describedby="emailHelp"
-            />
-          </div>
-          <div class="form-group col">
-            <label for="input-name">Name</label>
-            <input type="text" class="form-control" id="input-name" />
-          </div>
+      <h5 class="contact-message">
+        Message me any time to get in touch!
+      </h5>
+      <div class="media-icons row">
+        <div class="icon-1 col">
+          <a href="https://github.com/bmclela"
+            ><i class="media-icon fab fa-github-square fa-3x"></i
+          ></a>
         </div>
-        <div class="form-group">
-          <label for="input-text">Message</label>
-          <textarea class="form-control" id="input-text" rows="3"></textarea>
+        <div class="icon-3 col">
+          <a href="mailto:ben.mcleland@gmail.com?Subject=Hello!" target="_top"
+            ><i class="media-icon fa fa-envelope fa-3x"></i
+          ></a>
         </div>
-      </form>
-      <a href="https://github.com/bmclela"
-        ><i class="media-icon fab fa-github-square fa-2x"></i
-      ></a>
-      <a href="https://www.linkedin.com/in/ben-mcleland/"
-        ><i class="media-icon fab fa-linkedin fa-2x"></i
-      ></a>
-      <a href="https://www.facebook.com/ben.mcleland"
-        ><i class="media-icon fab fa-facebook-square fa-2x"></i
-      ></a>
+        <div class="icon-2 col">
+          <a href="https://www.linkedin.com/in/ben-mcleland/"
+            ><i class="media-icon fab fa-linkedin fa-3x"></i
+          ></a>
+        </div>
+      </div>
       <p class="copyright">Ben McLeland &copy2020</p>
     </section>
     <script
@@ -364,12 +367,16 @@
       crossorigin="anonymous"
     ></script>
     <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
     <script src="script.js"></script>
   </body>
 </html>

@@ -6,12 +6,12 @@ window.onscroll = function () {
 };
 function scrollFunction() {
   if (
-    document.body.scrollTop > windowHeight - 50 ||
-    document.documentElement.scrollTop > windowHeight - 50
+    document.body.scrollTop >= windowHeight - 51 ||
+    document.documentElement.scrollTop >= windowHeight - 51
   ) {
     document.getElementById('navbar').style.top = '0';
   } else {
-    document.getElementById('navbar').style.top = '-50px';
+    document.getElementById('navbar').style.top = '-200px';
   }
 }
 
@@ -27,7 +27,7 @@ function smoothScroll(e) {
 
     $('html, body').animate(
       {
-        scrollTop: $(hash).offset().top,
+        scrollTop: $(hash).offset().top - 50,
       },
       800
     );
