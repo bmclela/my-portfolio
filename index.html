@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/jpg" href="/favicon.ico"/>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -41,7 +42,7 @@
     </ul>
 
     <section id="about">
-      <div class="content-container">
+      <div class="content-container container-fluid">
         <h2 class="section-title">
           About
         </h2>
@@ -62,7 +63,7 @@
               to improve my skills.
             </p>
           </div>
-        </d>
+        </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 skills">
           <div class="col">
             <div class="skill skill-1">
@@ -82,8 +83,7 @@
                 <span><i class="fa fa-cogs"></i></span> Back-End
               </h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                recusandae enim consequatur maxime, sit atque!
+                I have professinal experience working with large JavaEE server applications. For personal projects I prefer to use JavaScript with Node.js.
               </p>
             </div>
           </div>
@@ -93,8 +93,7 @@
                 <span><i class="fa fa-area-chart"></i></span> Algorithms
               </h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                recusandae enim consequatur maxime, sit atque!
+                Recognizing the time-space complexity of algorithms is critical. I pay close attention to Big O of the algorithms and data structures I implement.
               </p>
             </div>
           </div>
@@ -104,8 +103,7 @@
                 <span><i class="far fa-edit"></i></span> Design
               </h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                recusandae enim consequatur maxime, sit atque!
+                I find that thinking about UX can offer a nice break from staring at lines of code. I enjoy learning about design fundamentals and implementing them in projects.
               </p>
             </div>
           </div>
@@ -135,9 +133,7 @@
                   <div class="card-body">
                     <h4 class="card-title">FoosTracker</h4>
                     <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content. up the bulk of the
-                      card's content.
+                      This is a full-stack web application made using React and Redux for the front-end, node.js for the server, and MongoDB for the database. 
                     </p>
                   </div>
                 </div>
@@ -160,27 +156,29 @@
                   <div class="card-body">
                     <h4 class="card-title">Songify</h4>
                     <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content. the bulk of the
-                      card's content.
+                      A clean UI for the fictional application "Songify". Built simply using HTML, CSS, and JavaScript.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
+              <div
+                class="card-link"
+                data-toggle="modal"
+                data-target="#firstPortfolio"
+                href=""
+              >
               <div class="card card-3">
                 <img
-                  src="images/foos-tracker.png"
+                  src="images/first-portfolio.png"
                   class="card-img-top"
-                  alt="foos-tracker"
+                  alt="first-portfolio"
                 />
                 <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
+                  <h4 class="card-title">Website Portfolio</h4>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content. the bulk of the card's
-                    content.
+                    This is my origional website portfolio. I used Sass to generate the CSS in this project. The rest is HTML and JavaScript.
                   </p>
                 </div>
               </div>
@@ -219,24 +217,19 @@
                 alt="foos-tracker"
               />
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-                doloremque iste. Temporibus sequi maxime inventore itaque
-                aliquid ad voluptatibus a perferendis sed illum ipsa obcaecati
-                ab soluta distinctio laborum magnam eum, doloribus eius
-                praesentium animi vel sunt eveniet error aut. Fugiat ipsum
-                voluptatum et, veniam vitae quis saepe dignissimos excepturi!
+                I developed this web application to track the rankings of my friends and I as we played foosball games. Because the original application is still used regularly, this is a separate instance to showcase my work. Feel free to add your own games and mess around with the data to see how the application works.
               </p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary">
-                GitHub
-              </button>
-              <button type="button" class="btn btn-primary">
+              <a href="https://foos-tracker.herokuapp.com/"><button type="button" class="btn btn-secondary">
                 Live Demo
-              </button>
+              </button></a>
+              <a class="github-btn" href="https://github.com/bmclela/foosTracker"><button type="button" class="btn btn-secondary">
+                GitHub
+              </button></a>
               <button
                 type="button"
-                class="btn btn-secondary"
+                class="btn btn-outline-secondary"
                 data-dismiss="modal"
               >
                 Close
@@ -272,27 +265,73 @@
               <img
                 src="images/songify.png"
                 class="card-img-top"
-                alt="foos-tracker"
+                alt="songify"
               />
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-                doloremque iste. Temporibus sequi maxime inventore itaque
-                aliquid ad voluptatibus a perferendis sed illum ipsa obcaecati
-                ab soluta distinctio laborum magnam eum, doloribus eius
-                praesentium animi vel sunt eveniet error aut. Fugiat ipsum
-                voluptatum et, veniam vitae quis saepe dignissimos excepturi!
+                I built this website while I was taking a web development course. The site became "Songify" when I put my own spin on the instructor's origional design. Although the technology used to design the site is relatively simple, I still learned a lot about design fundamentals and how to build an engaging UI.
               </p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary">
-                GitHub
-              </button>
-              <button type="button" class="btn btn-primary">
+              <a href="https://bmclela.github.io/songify/"><button type="button" class="btn btn-secondary">
                 Live Demo
-              </button>
+              </button></a>
+              <a class="github-btn" href="https://github.com/bmclela/songify"><button type="button" class="btn btn-secondary">
+                GitHub
+              </button></a>
               <button
                 type="button"
-                class="btn btn-secondary"
+                class="btn btn-outline-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="firstPortfolio"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="firstPortfolioLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="firstPortfolioLabel">
+                Website Portfolio
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="images/first-portfolio.png"
+                class="card-img-top"
+                alt="first-portfolio"
+              />
+              <p>
+                This was my first portfolio I used to showcase some of my projects and experience. I followed a YouTube tutorial by Brad Traversy which was the first time I really got excited about web development. After some time, I decided to create a new portfolio (the site you're on now) from scratch to showcase some of the new things I learned. 
+              </p>
+            </div>
+            <div class="modal-footer">
+              <a href="https://bmclela.github.io/portfolio/"><button type="button" class="btn btn-secondary">
+                Live Demo
+              </button></a>
+              <a class="github-btn" href="https://github.com/bmclela/portfolio"><button type="button" class="btn btn-secondary">
+                GitHub
+              </button></a>
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
                 data-dismiss="modal"
               >
                 Close
@@ -317,12 +356,7 @@
               <h3>2015</h3>
               <h5>Information Technology Technician</h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit id
-                libero sint aut, culpa mollitia quod, iure labore minima sunt
-                corporis quibusdam quo unde illum nulla ut nisi rem modi porro
-                suscipit velit sequi aspernatur quos totam. Voluptatibus optio,
-                voluptate mollitia iusto ab, repudiandae, eius non odit tempora
-                nulla suscipit!
+                Helped set up a variety of technology services including wireless access points, conference call communication equipment, and classroom computer hardware.
               </p>
             </div>
           </div>
@@ -335,12 +369,7 @@
               <h3>2017</h3>
               <h5>Help Desk Technician</h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit id
-                libero sint aut, culpa mollitia quod, iure labore minima sunt
-                corporis quibusdam quo unde illum nulla ut nisi rem modi porro
-                suscipit velit sequi aspernatur quos totam. Voluptatibus optio,
-                voluptate mollitia iusto ab, repudiandae, eius non odit tempora
-                nulla suscipit!
+                Worked closely with a team to provide employees with a variety of services including: Transferring data and installing programs, providing customer support, and repairing broken computers.
               </p>
             </div>
           </div>
@@ -353,12 +382,7 @@
               <h3>2018</h3>
               <h5>SharePoint Administrator</h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit id
-                libero sint aut, culpa mollitia quod, iure labore minima sunt
-                corporis quibusdam quo unde illum nulla ut nisi rem modi porro
-                suscipit velit sequi aspernatur quos totam. Voluptatibus optio,
-                voluptate mollitia iusto ab, repudiandae, eius non odit tempora
-                nulla suscipit!
+                Created and implemented a new SharePoint hub for the Sonoco Safety Division including 20 linked websites for each Sonoco plant. Flew to several Sonoco plants to understand the needs of Safety Coordinators at each location.
               </p>
             </div>
           </div>
@@ -371,13 +395,7 @@
               <h3>2019 - 2020</h3>
               <h5>Associate Software Developer</h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                cupiditate suscipit eligendi numquam animi eos! Voluptate facere
-                laborum veniam delectus porro quis aut hic neque, expedita,
-                inventore, pariatur obcaecati. Quibusdam assumenda ex, saepe
-                iure, explicabo velit aspernatur at dignissimos vitae sit,
-                minima animi veritatis ipsam odit. Quod iste ratione et modi sed
-                pariatur qui fugiat totam cum doloremque. Corporis, eveniet.
+                Worked with a team to develop and maintain a distributed and highly performant payment processing web application owned by IBM. Responsibilities included designing unique solutions to implement complex business rules, analyzing defects to find and correct bugs in the application, and maintaining consistent communication with clients.
               </p>
             </div>
           </div>
