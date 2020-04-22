@@ -98,9 +98,9 @@ section {
 
 .headshot {
   margin: auto;
-  border: 5px solid #17b088;
+  border: 5px solid #222831;
   border-radius: 50%;
-  background-color: #17b088;
+  background-color: #222831;
 }
 
 .section-title {
@@ -114,7 +114,7 @@ section {
   width: 200px;
 }
 
-.profile {
+.row.profile {
   margin-bottom: 50px;
   margin-top: 10px;
 }
@@ -244,6 +244,37 @@ section {
   border-radius: 0 0 15px 15px;
 }
 
+.modal-body {
+  padding: 0;
+}
+
+#foosTracker .modal-body img {
+  background-color: #fedb62;
+  border-radius: 0;
+}
+
+#songify .modal-body img {
+  background-color: #5a24b0;
+  border-radius: 0;
+}
+
+#video-player .modal-body img {
+  background-color: #17b088;
+  border-radius: 0;
+}
+
+.modal-body p {
+  padding: 10px;
+}
+
+.modal-header {
+  background-color: #eeeeee;
+}
+
+.modal-footer {
+  background-color: #eeeeee;
+}
+
 /* Experience */
 
 #experience {
@@ -261,7 +292,7 @@ section {
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 1px;
   background-color: #afafaf;
@@ -296,13 +327,13 @@ section {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  /* border: 6px solid #afafaf; */
+  border: 6px solid #afafaf;
   text-align: center;
   z-index: 2;
   left: 40px;
 }
 
-.timeline-image.img-1 img {
+/* .timeline-image.img-1 img {
   border: 6px solid #ffb4c4;
 }
 
@@ -320,20 +351,46 @@ section {
 
 .timeline-image.img-5 img {
   border: 6px solid #afafaf;
-}
+} */
 
 /* Place the container to the left */
 .left {
   left: 0;
   padding-right: 70px;
   text-align: right;
+  padding-left: 20px;
 }
+
+/* .left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 30px;
+  width: 0;
+  z-index: 1;
+  right: 60px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+} */
 
 /* Place the container to the right */
 .right {
   left: 50%;
   padding-left: 70px;
+  padding-right: 20px;
 }
+
+/* .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 30px;
+  width: 0;
+  z-index: 1;
+  left: 60px;
+  border-width: 10px 10px 10px 0;
+} */
 
 /* Fix the circle for containers on the right side */
 .right::after {
@@ -345,6 +402,76 @@ section {
   position: relative;
   border-radius: 6px;
   margin-left: auto;
+  background-color: white;
+  padding: 20px;
+}
+
+.content-1 {
+  border: 2px solid #ffb4c4;
+}
+
+.content-2 {
+  border: 2px solid #fedc62;
+}
+
+.content-3 {
+  border: 2px solid #5a24b0;
+}
+
+.content-4 {
+  border: 2px solid #17b087;
+}
+
+.arrow-1::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 30px;
+  width: 0;
+  z-index: 1;
+  right: 60px;
+  border: 1px solid #ffb4c4;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #ffb4c4;
+}
+
+.arrow-2::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 30px;
+  width: 0;
+  z-index: 1;
+  left: 60px;
+  border: 1px solid #fedc62;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #fedc62 transparent transparent;
+}
+
+.arrow-3::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 30px;
+  width: 0;
+  z-index: 1;
+  right: 60px;
+  border: 1px solid #5a24b0;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #5a24b0;
+}
+
+.arrow-4::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 30px;
+  width: 0;
+  z-index: 1;
+  left: 60px;
+  border: 1px solid #17b087;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #17b087 transparent transparent;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -362,11 +489,33 @@ section {
   }
 
   /* Make sure that all arrows are pointing leftwards */
-  .container::before {
-    left: 60px;
-    border: medium solid white;
+
+  .arrow-1::before {
+    left: 90px;
+    border: medium solid #ffb4c4;
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent #ffb4c4 transparent transparent;
+  }
+
+  .arrow-2::before {
+    left: 90px;
+    border: medium solid #fedc62;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #fedc62 transparent transparent;
+  }
+
+  .arrow-3::before {
+    left: 90px;
+    border: medium solid #5a24b0;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #5a24b0 transparent transparent;
+  }
+
+  .arrow-4::before {
+    left: 90px;
+    border: medium solid #17b087;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #17b087 transparent transparent;
   }
 
   .timeline-image {
@@ -388,6 +537,11 @@ section {
 
   .heading h1 {
     font-size: 1.5rem;
+  }
+
+  section {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
