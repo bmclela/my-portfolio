@@ -119,16 +119,13 @@ section {
   margin-top: 10px;
 }
 
-/* #skills {
-  margin: 30px;
-} */
-
 .skill {
   background-color: white;
   border: 1px solid #cacaca;
   border-radius: 15px;
   padding: 40px 20px;
-  margin: 15px 0;
+  margin: 15px 0 0;
+  height: 90%;
 }
 
 .skill-1 h5 span {
@@ -151,14 +148,6 @@ section {
   font-size: 25px;
   margin-bottom: 30px;
 }
-/* 
-.skill h5 span {
-  color: #00adb5;
-} */
-
-.skill p {
-  margin-bottom: 0;
-}
 
 /* Projects */
 
@@ -174,37 +163,16 @@ section {
   margin: 20px auto;
   transition: all 0.2s ease;
   border-radius: 15px;
-  /* background-color: #22283128; */
+  height: 90%;
 }
-
-/* .card {
-  position: relative;
-  overflow: hidden;
-}
-
-.card .background-image {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: auto;
-  opacity: 0.6;
-} */
-
-/* .card-1 .card-title {
-  color: #17b088;
-}
-
-.card-2 .card-title {
-  color: #fedb62;
-}
-
-.card-3 .card-title {
-  color: #ffb4c4;
-} */
 
 .card-link {
   color: black;
+  height: 100%;
+}
+
+.card-text {
+  padding-bottom: 20px;
 }
 
 .card:hover {
@@ -222,21 +190,15 @@ section {
 }
 
 .card-1 {
-  /* background-color: #fedc624f; */
   background-color: #fedb62;
-  /* z-index: 0; */
 }
 
 .card-2 {
-  /* background-color: #5a24b041; */
   background-color: #5a24b0;
-  /* z-index: 0; */
 }
 
 .card-3 {
-  /* background-color: #ffb4c449; */
   background-color: #17b088;
-  /* z-index: 0; */
 }
 
 .card-1 .card-img-top {
@@ -306,7 +268,7 @@ section {
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 1px;
   background-color: #afafaf;
@@ -347,25 +309,17 @@ section {
   left: 40px;
 }
 
-/* .timeline-image.img-1 img {
-  border: 6px solid #ffb4c4;
-}
-
-.timeline-image.img-2 img {
-  border: 6px solid #fedb62;
-}
-
-.timeline-image.img-3 img {
-  border: 6px solid #5a24b0;
-}
-
-.timeline-image.img-4 img {
-  border: 6px solid #17b088;
-}
-
-.timeline-image.img-5 img {
+.timeline-image.img-5 .circle {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
   border: 6px solid #afafaf;
-} */
+  text-align: center;
+  z-index: 2;
+  left: 9px;
+  background-color: #afafaf;
+}
 
 /* Place the container to the left */
 .left {
@@ -375,36 +329,12 @@ section {
   padding-left: 20px;
 }
 
-/* .left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 30px;
-  width: 0;
-  z-index: 1;
-  right: 60px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-} */
-
 /* Place the container to the right */
 .right {
   left: 50%;
   padding-left: 70px;
   padding-right: 20px;
 }
-
-/* .right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 30px;
-  width: 0;
-  z-index: 1;
-  left: 60px;
-  border-width: 10px 10px 10px 0;
-} */
 
 /* Fix the circle for containers on the right side */
 .right::after {
@@ -437,7 +367,7 @@ section {
 }
 
 .arrow-1::before {
-  content: " ";
+  content: ' ';
   height: 0;
   position: absolute;
   top: 30px;
@@ -450,7 +380,7 @@ section {
 }
 
 .arrow-2::before {
-  content: " ";
+  content: ' ';
   height: 0;
   position: absolute;
   top: 30px;
@@ -463,7 +393,7 @@ section {
 }
 
 .arrow-3::before {
-  content: " ";
+  content: ' ';
   height: 0;
   position: absolute;
   top: 30px;
@@ -476,7 +406,7 @@ section {
 }
 
 .arrow-4::before {
-  content: " ";
+  content: ' ';
   height: 0;
   position: absolute;
   top: 30px;
@@ -538,6 +468,10 @@ section {
 
   .timeline-image img {
     left: 0px;
+  }
+
+  .timeline-image.img-5 .circle {
+    left: 32px;
   }
 
   /* Make all right containers behave like the left ones */
