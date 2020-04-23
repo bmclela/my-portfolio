@@ -306,7 +306,7 @@ section {
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 1px;
   background-color: #afafaf;
@@ -437,7 +437,7 @@ section {
 }
 
 .arrow-1::before {
-  content: ' ';
+  content: " ";
   height: 0;
   position: absolute;
   top: 30px;
@@ -450,7 +450,7 @@ section {
 }
 
 .arrow-2::before {
-  content: ' ';
+  content: " ";
   height: 0;
   position: absolute;
   top: 30px;
@@ -463,7 +463,7 @@ section {
 }
 
 .arrow-3::before {
-  content: ' ';
+  content: " ";
   height: 0;
   position: absolute;
   top: 30px;
@@ -476,7 +476,7 @@ section {
 }
 
 .arrow-4::before {
-  content: ' ';
+  content: " ";
   height: 0;
   position: absolute;
   top: 30px;
@@ -492,7 +492,7 @@ section {
 @media screen and (max-width: 700px) {
   /* Place the timelime to the left */
   .timeline::after {
-    left: 31px;
+    left: 40px;
   }
 
   /* Full-width containers */
@@ -537,7 +537,7 @@ section {
   }
 
   .timeline-image img {
-    left: -9px;
+    left: 0px;
   }
 
   /* Make all right containers behave like the left ones */
