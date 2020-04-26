@@ -126,6 +126,7 @@ section {
   padding: 40px 20px;
   margin: 15px 0 0;
   height: 90%;
+  box-shadow: 0 2px 5px #cacaca;
 }
 
 .skill-1 h5 span {
