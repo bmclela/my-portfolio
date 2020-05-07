@@ -150,6 +150,10 @@ section {
   margin-bottom: 30px;
 }
 
+.skill p {
+  font-size: 20px;
+}
+
 /* Projects */
 
 #projects {
